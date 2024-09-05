@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas BMI Calculator</title>
+</head>
+<body>
+        <div class="container">
+            <div class="title">
+                <h1>BMI KALKULATOR</h1>
+                <p>Ingin tahu apakah berat badan Anda sudah ideal?</p>
+                <p>Yuk coba BMI Kalkulator sekarang dan dapatkan jawabannya dalam hitungan detik !</p>
+            </div>
+            <div class="form-BMI">
+                <label for="berat">Berat Badan(Kg):</label><br>
+                <input type="number" id="berat" name="berat" placeholder="Berat (Kg)" maxlength="3">
+                <br>
+                <label for="tinggi">Tinggi Badan(Cm):</label><br>
+                <input type="number" id="tinggi" name="tinggi" placeholder="Tinggi (Cm)" maxlength="3">
+                <br>
+                <button onclick="hitungBMI()" id="button-BMI">Hitung BMI</button>
+                <p id="hasil"></p>
+            </div>
+        </div>
+</body>
+</html>
