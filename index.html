@@ -82,6 +82,16 @@
         const tinggi = document.getElementById("tinggi").value;
         const hasil = document.getElementById("hasil");
         
+        const bmi = berat / Math.pow((tinggi / 100), 2);
+            if (bmi < 18.5) {
+                hasil.textContent = "BMI Anda : " + bmi.toFixed(1) + " maka status BB Anda " + " UNDERWEIGHT";
+            } else if (bmi >= 18.5 && bmi <= 24.9) {
+                hasil.textContent = "BMI Anda : " + bmi.toFixed(1) + " maka status BB Anda"  + " NORMAL WEIGHT";
+            } else if (bmi >= 25 && bmi <= 29.9) {
+                hasil.textContent = "BMI Anda : " + bmi.toFixed(1) + " maka status BB Anda " + " OVERWEIGHT";
+            } else if (bmi >= 30) {
+                hasil.textContent = "BMI Anda : " + bmi.toFixed(1) + " maka status BB Anda" + " OBESITY";
+            }
     }   
 </script>
 </body>
